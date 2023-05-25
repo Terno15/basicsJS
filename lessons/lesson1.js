@@ -67,3 +67,28 @@ if(hour >= 6 && hour < 12){
 for (const cars of car) {
     console.log(cars);
 }
+
+//Functions
+//Déclarative function
+function helloOne(){
+    console.log('HelloOne');
+}
+helloOne();
+
+//Anonymous function
+    let helloTwo = function(){
+        console.log('HelloTwo');
+    }
+helloTwo();
+
+//Arrow function
+let helloThree =()=> {
+    console.log('helloThree');
+}
+helloThree()
+
+//with arguments
+function printName(name){
+    console.log("Hello " +name);
+}
+printName("Thierno");
