@@ -87,8 +87,30 @@ let helloThree =()=> {
 }
 helloThree()
 
-//with arguments
-function printName(name){
-    console.log("Hello " +name);
+//with arguments at least one or two argmuments
+function printName(name, prenom){
+    console.log("Hello " +name+ ' '+ prenom);
 }
-printName("Thierno");
+printName("Diallo", "Alseny");
+
+//with return
+function multiply(number){
+    let resullt = number * 2;
+    return resullt;
+}
+let resuttt = multiply(5);
+console.log(resuttt);
+
+//Import function
+import { printAge } from "./other.js";
+printAge(15);
+
+//import everything
+import * as helper from './other.js'
+helper.printAge(36);
+
+//import class
+ import { customerDetails } from "./other.js";
+ 
+ let CustomerDetails = new customerDetails();
+ CustomerDetails.printFirstName('alseny');
